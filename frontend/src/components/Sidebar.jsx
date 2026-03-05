@@ -35,6 +35,7 @@ const NAV = {
         { label: "Overview", to: "/student", icon: LayoutDashboard },
         { label: "Attendance", to: "/student/attendance", icon: ClipboardCheck },
         { label: "Marks", to: "/student/marks", icon: Award }
+        { label: "Bonafide Certificate", to: "/student/bonafide", icon: Award }
     ]
 };
 
