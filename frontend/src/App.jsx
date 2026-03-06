@@ -3,6 +3,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import DashboardLayout from "./layouts/DashboardLayout.jsx";
 import { useAuthStore } from "./store/authStore";
 import { ToastProvider } from "./components/Toast.jsx";
+import BonafideCertificate from "./pages/student/BonafideCertificate";
 
 const Login = lazy(() => import("./pages/auth/Login.jsx"));
 
@@ -122,6 +123,7 @@ export default function App() {
                         <Route index element={<StudentDashboard />} />
                         <Route path="attendance" element={<StudentAttendanceView />} />
                         <Route path="marks" element={<StudentMarksView />} />
+                        <Route path="/student/bonafide" element={<BonafideCertificate />} />
                     </Route>
 
                     <Route path="*" element={<Navigate to="/" replace />} />
